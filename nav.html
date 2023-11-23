@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036"></script>
+    <title>Главная</title>
+</head>
+
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="catalog.html" style="display: block; margin-bottom: 20px;">
+            Каталог ур.1
+        </a>
+        <a href="catalog2.html" style="display: block; margin-bottom: 20px;">
+            Каталог ур.2
+        </a>
+        <a href="catalog-empty.html" style="display: block; margin-bottom: 20px;">
+            Категория - нет товаров для отображения
+        </a>
+        <a href="catalog-empty2.html" style="display: block; margin-bottom: 20px;">
+            Категория - Без товаров
+        </a>
+        <a href="search.html" style="display: block; margin-bottom: 20px;">
+            Результаты поиска
+        </a>
+        <a href="search-empty.html" style="display: block; margin-bottom: 20px;">
+            Результаты поиска - Нет результатов
+        </a>
+        <a href="catalog-item.html" style="display: block; margin-bottom: 20px;">
+            Карточка товара
+        </a>
+        <a href="catalog-item2.html" style="display: block; margin-bottom: 20px;">
+            Карточка товара - Товара нет
+        </a>
+        <a href="catalog-item3.html" style="display: block; margin-bottom: 20px;">
+            Карточка товара - Отправленные формы
+        </a>
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            О компании
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Наши контакты
+        </a>
+        <a href="contacts2.html" style="display: block; margin-bottom: 20px;">
+            Наши контакты - Отправленная формы
+        </a>
+        <a href="news.html" style="display: block; margin-bottom: 20px;">
+            Новости
+        </a>
+        <a href="news-item.html" style="display: block; margin-bottom: 20px;">
+            Новости - Полная запись
+        </a>
+        <a href="delivery.html" style="display: block; margin-bottom: 20px;">
+            Доставка и оплата
+        </a>
+        <a href="guarantee.html" style="display: block; margin-bottom: 20px;">
+            Гарантия
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            Страница не найдена
+        </a>
+        <a href="conf.html" style="display: block; margin-bottom: 20px;">
+            Политика конфиденциальности
+        </a>
+        <a href="cart.html" style="display: block; margin-bottom: 20px;">
+            Корзина
+        </a>
+        <a href="cart-empty.html" style="display: block; margin-bottom: 20px;">
+            Корзина - Пусто
+        </a>
+        <a href="order.html" style="display: block; margin-bottom: 20px;">
+            Оформление заказа
+        </a>
+        <a href="order2.html" style="display: block; margin-bottom: 20px;">
+            Оформление заказа (Пользователь не авторизован)
+        </a>
+        <a href="order-success.html" style="display: block; margin-bottom: 20px;">
+            Заказ оформлен
+        </a>
+        <a href="favourite.html" style="display: block; margin-bottom: 20px;">
+            Избранные товары
+        </a>
+        <a href="favourite-empty.html" style="display: block; margin-bottom: 20px;">
+            Избранные товары - Пусто
+        </a>
+
+
+
+        <a href="login.html" style="display: block; margin-bottom: 20px;">
+            Авторизация
+        </a>
+        <a href="pass-recover.html" style="display: block; margin-bottom: 20px;">
+            Восстановление пароля - Шаг 1
+        </a>
+        <a href="pass-recover2.html" style="display: block; margin-bottom: 20px;">
+            Восстановление пароля - Шаг 2
+        </a>
+        <a href="pass-recover3.html" style="display: block; margin-bottom: 20px;">
+            Восстановление пароля - Шаг 3
+        </a>
+        <a href="reg.html" style="display: block; margin-bottom: 20px;">
+            Регистрация
+        </a>
+
+        <a href="dashboard.html" style="display: block; margin-bottom: 20px;">
+            Дашбоард
+        </a>
+        <a href="dashboard2.html" style="display: block; margin-bottom: 20px;">
+            Дашбоард (Заказов нет)
+        </a>
+        <a href="dashboard3.html" style="display: block; margin-bottom: 20px;">
+            Дашбоард (Опт)
+        </a>
+        <a href="profile-edit.html" style="display: block; margin-bottom: 20px;">
+            Редактирование профиля
+        </a>
+        <a href="orders.html" style="display: block; margin-bottom: 20px;">
+            Мои заказы
+        </a>
+        <a href="orders.html" style="display: block; margin-bottom: 20px;">
+            Мои заказы (Нет заказов)
+        </a>
+        <a href="order-item.html" style="display: block; margin-bottom: 20px;">
+            Страница одного заказа
+        </a>
+        <a href="addresses.html" style="display: block; margin-bottom: 20px;">
+            Мои адреса
+        </a>
+        <a href="addresses-new.html" style="display: block; margin-bottom: 20px;">
+            Мои адреса (Нет адресов)
+        </a>
+        <a href="address-edit.html" style="display: block; margin-bottom: 20px;">
+            Редактирование адреса
+        </a>
+        <a href="favourite2.html" style="display: block; margin-bottom: 20px;">
+            Избранные товары (Для авторизованных)
+        </a>
+        <a href="pass-edit.html" style="display: block; margin-bottom: 20px;">
+            Сменить пароль
+        </a>
+
+
+
+
+        <button data-modal="orderModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Заказать звонок
+        </button>
+
+
+        <code>
+
+            @@include
+            ('components/page-blocks/_filter-slider.html',{ <br>
+            "start1":"0", <br>
+            "start2":"30000", <br>
+            "min":"1000", <br>
+            "max":"100000", <br>
+            })
+
+        </code>
+    </div>
+
+
+
+
+
+
+
+
+    <!--  -->
+    <div class="cookie-modal _active">
+        <div class="container">
+            <div class="cookie-modal__inner">
+                <div class="cookie-modal__content">
+                    <div class="cookie-modal__title text23 text18-tablet">
+                        Сайт использует Cookie
+                    </div>
+                    <div class="cookie-modal__desc">
+                        Используя данный сайт, вы даете согласие на использование файлов cookie, данных об IP-адресе и местоположении, помогающих нам сделать его удобнее для вас.
+                        <a href="">Подробнее</a>
+                    </div>
+                </div>
+                <div class="cookie-modal__nav">
+                    <button class="cookie-modal__btn m-btn m-btn-primary-outline">
+                        <span>Принять и закрыть</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="orderModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text36 text26-tablet medium-text">
+                    Заказать звонок
+                </div>
+            </div>
+            <form action="" class="modal-form">
+                <fieldset class="fg">
+                    <label>
+                        Ваше имя <span>*</span>:
+                    </label>
+                    <input type="text" placeholder="Как к вам обращаться?">
+                </fieldset>
+                <fieldset class="fg">
+                    <label>
+                        Номер телефона <span>*</span>:
+                    </label>
+                    <input type="tel" placeholder="+7 (___) ___-__-__">
+                </fieldset>
+                <div class="modal-form__nav">
+                    <button class="m-btn m-btn-primary _arrow">
+                        <span>Отправить</span>
+                        <img src="img/arrow-right2.svg" alt="">
+                    </button>
+                </div>
+                <div class="modal-form__checks">
+                    <div class="m-check ">
+                        <input type="checkbox">
+                        <label><span>Нажимая кнопку “Отправить” вы соглашаетесь на обработку персональных данных в соответствии с <a href="">политикой конфиденциальности</a></span></label>
+                    </div>
+
+                    <div class="m-check ">
+                        <input type="checkbox">
+                        <label><span>Согласен получать рассылку</span></label>
+                    </div>
+
+                </div>
+
+
+            </form>
+            <button class="modal__close _close-modal">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.4" d="M15 1L1 15M1 1L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- <div class="modal-backdrop show"></div> -->
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

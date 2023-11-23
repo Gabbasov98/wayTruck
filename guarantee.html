@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036"></script>
+    <title>Гарантия</title>
+</head>
+
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header _open-menu2">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top__inner">
+                        <div class="lang">
+                            <div class="lang__show">
+                                <img src="img/world.svg" alt="Мир" class="lang__icon">
+                                <div class="lang__current text14 medium-text">
+                                    Русский
+                                </div>
+                                <img src="img/arrow-down.svg" alt="Стрелка" class="lang__arrow">
+                            </div>
+                            <div class="lang__hidden">
+                                <a href="" class="lang__option _active"><span>Русский</span></a>
+                                <a href="" class="lang__option"><span>Казахский</span></a>
+                            </div>
+                        </div>
+
+                        <div class="menu">
+                            <div class="menu__top">
+                                <div class="header-action">
+                                    <a href="" class="header-action__btn">
+                                        <img src="img/user.svg" alt="Пользователь">
+                                        <span class="text14">Войти</span>
+                                    </a>
+                                    <a href="" class="header-action__btn header-action__btn--favourite">
+                                        <img src="img/favourite.svg" alt="Избранное">
+                                        <span class="text14">Избранное</span>
+                                        <div class="_pin"><span>4</span></div>
+                                    </a>
+                                    <a href="" class="header-action__btn header-action__btn--cart">
+                                        <img src="img/cart.svg" alt="Корзина">
+                                        <span class="text14">Корзина</span>
+                                        <div class="_pin"><span>7</span></div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <nav class="nav">
+                                <a href="" class="nav__link nav__link--catalog">
+                                    <span>Каталог запчастей</span>
+                                </a>
+                                <a href="" class="nav__link">
+                                    <span>О компании</span>
+                                </a>
+                                <a href="" class="nav__link">
+                                    <span>Новости</span>
+                                </a>
+                                <a href="" class="nav__link">
+                                    <span>Доставка и оплата</span>
+                                </a>
+                                <a href="" class="nav__link">
+                                    <span>Гарантия</span>
+                                </a>
+                                <a href="" class="nav__link">
+                                    <span>Контакты</span>
+                                </a>
+                            </nav>
+
+                            <div class="menu__call">
+                                <button class="header__call m-btn m-btn-primary-outline">
+                                    <span>Заказать звонок</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="menu__bg _backdrop _toggle-menu"></div>
+                        <button class="menu__close close-btn _toggle-menu">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.7" clip-path="url(#clip0_417_41080)">
+                                    <path d="M13.5 4.5L4.5 13.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M4.5 4.5L13.5 13.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </button>
+
+                        <div class="header-top__right">
+                            <div class="header-contacts">
+                                <div class="header-contacts__show">
+                                    <img src="img/whatsapp.svg" alt="Whatsapp" class="header-contacts__icon">
+                                    <div class="text15 medium-text">
+                                        +7 747 865 31 43
+                                    </div>
+                                    <img src="img/arrow-down.svg" alt="Стрелка" class="header-contacts__arrow">
+                                </div>
+                                <div class="header-contacts__hidden">
+                                    <div class="header-phone">
+                                        <div class="header-phone__title text15">
+                                            Менеджер по продажам
+                                        </div>
+                                        <a href="tel:+77077772433" class="header-phone__link">
+                                            <img src="img/whatsapp2.svg" alt="Whatsapp" class="header-phone__icon">
+                                            <span class="text17">+7-707-777-24-33</span>
+                                        </a>
+                                    </div>
+                                    <div class="header-phone">
+                                        <div class="header-phone__title text15">
+                                            Менеджер по продажам
+                                        </div>
+                                        <a href="tel:+77476521513" class="header-phone__link">
+                                            <img src="img/whatsapp2.svg" alt="Whatsapp" class="header-phone__icon">
+                                            <span class="text17">+7-747-652-15-13</span>
+                                        </a>
+                                    </div>
+                                    <div class="header-phone">
+                                        <div class="header-phone__title text15">
+                                            Менеджер по продажам
+                                        </div>
+                                        <a href="tel:+77476521506" class="header-phone__link">
+                                            <img src="img/whatsapp2.svg" alt="Whatsapp" class="header-phone__icon">
+                                            <span class="text17">+7-747-652-15-06</span>
+                                        </a>
+                                    </div>
+                                    <div class="header-phone">
+                                        <div class="header-phone__title text15">
+                                            Менеджер по продажам
+                                        </div>
+                                        <a href="tel:+77478653143" class="header-phone__link">
+                                            <img src="img/whatsapp2.svg" alt="Whatsapp" class="header-phone__icon">
+                                            <span class="text17">+7-747-865-31-43</span>
+                                        </a>
+                                    </div>
+                                    <button class="header__call m-btn m-btn-primary">
+                                        <span>Заказать звонок</span>
+                                    </button>
+                                    <a href="mailto:sales@way-truck.com" class="header-contacts__email">
+                                        <img src="img/mail.svg" alt="Конверт" class="header-phone__icon">
+                                        <span class="text15">sales@way-truck.com</span>
+                                    </a>
+                                    <div class="header-contacts__address">
+                                        <img src="img/map-pin.svg" alt="Маркер карты" class="header-phone__icon">
+                                        <span class="text14">Алматы, улица Серикова, 6</span>
+                                    </div>
+                                    <button class="header-contacts__close close-btn">
+                                        <img src="img/close.svg" alt="Крестик">
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="header__call header__call--hide-mob m-btn m-btn-white">
+                                <span>Заказать звонок</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="header-bottom__inner">
+                        <a href="" class="header__logo">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+                        <a href="" class="header__btn header__btn--desktop m-btn m-btn-black">
+                            <img src="img/burger.svg" alt="Меню">
+                            <span>Каталог</span>
+                        </a>
+                        <button class="header__btn _toggle-menu header__btn--mob m-btn m-btn-black">
+                            <img src="img/burger.svg" alt="Меню">
+                            <span>Меню</span>
+                        </button>
+
+                        <div class="header-search m-search">
+                            <fieldset class="search-field header-search__field">
+                                <input class="_search-field" type="text" placeholder="Поиск по 10 000 запчастей" data-placeholder="Поиск по 10 000 запчастей" data-placeholder2="Поиск...">
+                                <button class="search-field__btn">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.7725 17.5L13.4166 13.1053M1.77246 8.26978C1.77246 9.1588 1.94815 10.0391 2.2895 10.8605C2.63085 11.6818 3.13118 12.4281 3.76191 13.0567C4.39265 13.6854 5.14144 14.184 5.96553 14.5242C6.78963 14.8645 7.67289 15.0396 8.56488 15.0396C9.45687 15.0396 10.3401 14.8645 11.1642 14.5242C11.9883 14.184 12.7371 13.6854 13.3678 13.0567C13.9986 12.4281 14.4989 11.6818 14.8403 10.8605C15.1816 10.0391 15.3573 9.1588 15.3573 8.26978C15.3573 7.38076 15.1816 6.50044 14.8403 5.6791C14.4989 4.85775 13.9986 4.11145 13.3678 3.48282C12.7371 2.85419 11.9883 2.35553 11.1642 2.01532C10.3401 1.67511 9.45687 1.5 8.56488 1.5C7.67289 1.5 6.78963 1.67511 5.96553 2.01532C5.14144 2.35553 4.39265 2.85419 3.76191 3.48282C3.13118 4.11145 2.63085 4.85775 2.2895 5.6791C1.94815 6.50044 1.77246 7.38076 1.77246 8.26978Z" stroke="#1A1E29" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </fieldset>
+
+
+
+                            <div class="m-search__result">
+
+
+                                <div class="m-search__items">
+                                    <a href="" class="search-item">
+                                        <div class="search-item__img">
+                                            <img src="img/search-img.webp" alt="">
+                                        </div>
+                                        <div class="search-item__content">
+                                            <div class="search-item__title text17 medium-text">
+                                                Ремкомплект V образной тяги HOWO
+                                            </div>
+                                            <div class="search-item__code text13">
+                                                5G5GGDKHJH7255
+                                            </div>
+                                        </div>
+                                        <div class="search-item__btn m-btn m-btn-primary-outline">
+                                            <span>Перейти</span>
+                                        </div>
+                                    </a>
+
+                                    <a href="" class="search-item">
+                                        <div class="search-item__img">
+                                            <img src="img/search-img2.webp" alt="">
+                                        </div>
+                                        <div class="search-item__content">
+                                            <div class="search-item__title text17 medium-text">
+                                                Ремкомплект ГУР HOWO
+                                            </div>
+                                            <div class="search-item__code text13">
+                                                5G5GGDKHJH7255
+                                            </div>
+                                        </div>
+                                        <div class="search-item__btn m-btn m-btn-primary-outline">
+                                            <span>Перейти</span>
+                                        </div>
+                                    </a>
+
+                                    <a href="" class="search-item">
+                                        <div class="search-item__img">
+                                            <img src="img/search-img3.webp" alt="">
+                                        </div>
+                                        <div class="search-item__content">
+                                            <div class="search-item__title text17 medium-text">
+                                                Ремкомплект V образной тяги HOWO
+                                            </div>
+                                            <div class="search-item__code text13">
+                                                5G5GGDKHJH7255
+                                            </div>
+                                        </div>
+                                        <div class="search-item__btn m-btn m-btn-primary-outline">
+                                            <span>Перейти</span>
+                                        </div>
+                                    </a>
+
+                                    <a href="" class="search-item">
+                                        <div class="search-item__img">
+                                            <img src="img/search-img4.webp" alt="">
+                                        </div>
+                                        <div class="search-item__content">
+                                            <div class="search-item__title text17 medium-text">
+                                                Ремкомплект V образной тяги HOWO
+                                            </div>
+                                            <div class="search-item__code text13">
+                                                5G5GGDKHJH7255
+                                            </div>
+                                        </div>
+                                        <div class="search-item__btn m-btn m-btn-primary-outline">
+                                            <span>Перейти</span>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="m-search__nav">
+                                    <a href="" class="m-search__link m-btn m-btn-primary-outline">
+                                        <span class="text15">Перейти ко всем результатам</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header-action">
+                            <a href="" class="header-action__btn">
+                                <img src="img/user.svg" alt="Пользователь">
+                                <span class="text14">Войти</span>
+                            </a>
+                            <a href="" class="header-action__btn header-action__btn--favourite">
+                                <img src="img/favourite.svg" alt="Избранное">
+                                <span class="text14">Избранное</span>
+                                <div class="_pin"><span>4</span></div>
+                            </a>
+                            <a href="" class="header-action__btn header-action__btn--cart">
+                                <img src="img/cart.svg" alt="Корзина">
+                                <span class="text14">Корзина</span>
+                                <div class="_pin"><span>7</span></div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <main class="content">
+            <div class="page-top">
+                <div class="container">
+                    <nav class="woocommerce-breadcrumb">
+                        <a href="">Главная</a>
+                        <span>Гарантия</span>
+                    </nav>
+                </div>
+            </div>
+
+
+            <section class="guarantee">
+                <div class="container">
+                    <h1 class="text58 text37-tablet m-title">
+                        Гарантия на запчасти в компании Way Truck
+                    </h1>
+                    <div class="text">
+                        <p>На все продаваемые запчасти мы предоставляем гарантию в полном соответствии с законодательством Республики Казахстан.</p>
+                        <p><b>Обмен и возврат производятся при соблюдении следующих гарантийных требований:</b></p>
+                        <ul>
+                            <li>установка и ремонт деталей должны производиться в специализированном автосервисе или СТО</li>
+                            <li>при установке/замене/ремонте детали персонал автосервиса или СТО обязан соблюдать требования инструкции по установке и ремонту</li>
+                            <li>в послеремонтный период персонал, эксплуатирующий технику, соблюдал правила эксплуатации, определенные производителем техники</li>
+                        </ul>
+                        <p>В случае, если в техцентре или СТО сотрудниками было обнаружено несоответствие детали надлежащему качеству, то клиенту должно быть предоставлено заключение о невозможности проведения работ по ремонту/замене детали в виду ее несоответствия и невозможности дать гарантийные обязательства на услуги по замере/ремонту.</p>
+
+                        <hr>
+
+                        <h3>Наша компания оставляет за собой право отказать в принятии/обмене детали с браком в случаях:</h3>
+                        <ul>
+                            <li>неквалифицированной установки и нарушений правил установки детали и наличия соответствующих следов</li>
+                            <li>наличия следов неправильной транспортировки и хранения детали</li>
+                        </ul>
+
+                        <hr>
+
+                        <h3>Для решения спорных вопросов обязательно сохраняйте следующие документы:</h3>
+                        <ul>
+                            <li>документы, подтверждающие приобретение детали у нас</li>
+                            <li>документы, подтверждающие установку детали в специализированном техцентре или СТО</li>
+                            <li>заключение специализированного техцентра или СТО о несоответствии детали надлежащему качеству</li>
+                        </ul>
+
+                        <blockquote>
+                            Все претензии по Товару принимаются Поставщиком от Покупателя только путем оформления ее в письменном виде с даты получения товара Клиентом в зависимости от товара и срока по гарантий.
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-top__inner">
+                        <div class="footer-contacts">
+                            <div class="footer__title">
+                                Контакты
+                            </div>
+                            <div class="footer-contacts__items">
+                                <a href="tel:+77077772433" class="footer-contacts__phone">
+                                    <img src="img/phone.svg" alt="Телефонная трубка">
+                                    <span>+7 707 777 24 33</span>
+                                </a>
+                                <a href="tel:+77476521513" class="footer-contacts__phone">
+                                    <img src="img/phone.svg" alt="Телефонная трубка">
+                                    <span>+7 747 652 15 13</span>
+                                </a>
+                                <a href="tel:+77476521506" class="footer-contacts__phone">
+                                    <img src="img/phone.svg" alt="Телефонная трубка">
+                                    <span>+7 747 652 15 06</span>
+                                </a>
+                                <a href="tel:+77478653143" class="footer-contacts__phone">
+                                    <img src="img/phone.svg" alt="Телефонная трубка">
+                                    <span>+7 747 865 31 43</span>
+                                </a>
+                                <a href="" class="footer-contacts__whatsapp m-btn">
+                                    <span>Написать в WhatsApp</span>
+                                </a>
+                                <a href="mailto:sales@way-truck.com" class="footer-contacts__email">
+                                    <img src="img/mail.svg" alt="Конверт">
+                                    <span>sales@way-truck.com</span>
+                                </a>
+                                <a href="" class="footer-contacts__email">
+                                    <img src="img/instagram.svg" alt="Instagram">
+                                    <span>@wayteko.kaz</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="footer-nav">
+                            <div class="footer-nav__show">
+                                <div class="footer__title">
+                                    Информация
+                                </div>
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.64645 4.85355C3.84171 5.04882 4.15829 5.04882 4.35355 4.85355L7.53553 1.67157C7.7308 1.47631 7.7308 1.15973 7.53553 0.964466C7.34027 0.769204 7.02369 0.769204 6.82843 0.964466L4 3.79289L1.17157 0.964466C0.976311 0.769204 0.659728 0.769204 0.464466 0.964466C0.269204 1.15973 0.269204 1.47631 0.464466 1.67157L3.64645 4.85355ZM3.5 3.5L3.5 4.5L4.5 4.5L4.5 3.5L3.5 3.5Z" fill="white" />
+                                </svg>
+                            </div>
+                            <div class="footer-nav__hidden">
+                                <div class="footer-nav__links">
+                                    <a href="" class="footer-nav__link"><span>О компании</span></a>
+                                    <a href="" class="footer-nav__link"><span>Новости</span></a>
+                                    <a href="" class="footer-nav__link"><span>Доставка и оплата</span></a>
+                                    <a href="" class="footer-nav__link"><span>Гарантия</span></a>
+                                    <a href="" class="footer-nav__link"><span>Контакты</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-nav">
+                            <div class="footer-nav__show">
+                                <div class="footer__title">
+                                    Запчасти
+                                </div>
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.64645 4.85355C3.84171 5.04882 4.15829 5.04882 4.35355 4.85355L7.53553 1.67157C7.7308 1.47631 7.7308 1.15973 7.53553 0.964466C7.34027 0.769204 7.02369 0.769204 6.82843 0.964466L4 3.79289L1.17157 0.964466C0.976311 0.769204 0.659728 0.769204 0.464466 0.964466C0.269204 1.15973 0.269204 1.47631 0.464466 1.67157L3.64645 4.85355ZM3.5 3.5L3.5 4.5L4.5 4.5L4.5 3.5L3.5 3.5Z" fill="white" />
+                                </svg>
+                            </div>
+                            <div class="footer-nav__hidden">
+                                <div class="footer-nav__links">
+                                    <a href="" class="footer-nav__link"><span>Shaanxi</span></a>
+                                    <a href="" class="footer-nav__link"><span>Howo</span></a>
+                                    <a href="" class="footer-nav__link"><span>Faw</span></a>
+                                    <a href="" class="footer-nav__link"><span>Wayteko Premium</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-nav">
+                            <div class="footer-nav__show">
+                                <div class="footer__title">
+                                    Магазин
+                                </div>
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.64645 4.85355C3.84171 5.04882 4.15829 5.04882 4.35355 4.85355L7.53553 1.67157C7.7308 1.47631 7.7308 1.15973 7.53553 0.964466C7.34027 0.769204 7.02369 0.769204 6.82843 0.964466L4 3.79289L1.17157 0.964466C0.976311 0.769204 0.659728 0.769204 0.464466 0.964466C0.269204 1.15973 0.269204 1.47631 0.464466 1.67157L3.64645 4.85355ZM3.5 3.5L3.5 4.5L4.5 4.5L4.5 3.5L3.5 3.5Z" fill="white" />
+                                </svg>
+                            </div>
+                            <div class="footer-nav__hidden">
+                                <div class="footer-nav__links">
+                                    <a href="" class="footer-nav__link"><span>Каталог</span></a>
+                                    <a href="" class="footer-nav__link"><span>Корзина</span></a>
+                                    <a href="" class="footer-nav__link"><span>Избранные товары</span></a>
+                                    <a href="" class="footer-nav__link"><span>Личный кабинет</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer-subscribe">
+                            <div class="footer__title">
+                                Подписка на новости
+                            </div>
+                            <div class="footer-subscribe__desc">
+                                Подпишитесь на новости и скидки
+                            </div>
+                            <form action="" class="subscribe-form">
+                                <div class="subscribe-form__grid">
+                                    <fieldset class="fg ">
+                                        <input type="text" placeholder="Email">
+                                    </fieldset>
+
+
+                                    <button class="m-btn m-btn-primary">
+                                        <span>Подписаться</span>
+                                    </button>
+                                </div>
+
+                                <div class="m-check _gray">
+                                    <input checked type="checkbox">
+                                    <label><span>Согласен с <a href="">политикой конфиденциальности</a></span></label>
+                                </div>
+
+                            </form>
+                            <div class="footer-subscribe__hint">
+                                <div class="text12">Вся представленная на сайте информация носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями статьи 437 (2) ГК РФ.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom__inner">
+                        <div class="footer-bottom__item">
+                            <span>© 2023 - WayTruck - продажа запчастей для китайских грузовиков</span>
+                        </div>
+                        <a href="" class="footer-bottom__item footer-bottom__conf">
+                            <span>Политика конфиденциальности</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <div class="cookie-modal _active">
+        <div class="container">
+            <div class="cookie-modal__inner">
+                <div class="cookie-modal__content">
+                    <div class="cookie-modal__title text23 text18-tablet">
+                        Сайт использует Cookie
+                    </div>
+                    <div class="cookie-modal__desc">
+                        Используя данный сайт, вы даете согласие на использование файлов cookie, данных об IP-адресе и местоположении, помогающих нам сделать его удобнее для вас.
+                        <a href="">Подробнее</a>
+                    </div>
+                </div>
+                <div class="cookie-modal__nav">
+                    <button class="cookie-modal__btn m-btn m-btn-primary-outline">
+                        <span>Принять и закрыть</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="orderModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text36 text26-tablet medium-text">
+                    Заказать звонок
+                </div>
+            </div>
+            <form action="" class="modal-form">
+                <fieldset class="fg">
+                    <label>
+                        Ваше имя <span>*</span>:
+                    </label>
+                    <input type="text" placeholder="Как к вам обращаться?">
+                </fieldset>
+                <fieldset class="fg">
+                    <label>
+                        Номер телефона <span>*</span>:
+                    </label>
+                    <input type="tel" placeholder="+7 (___) ___-__-__">
+                </fieldset>
+                <div class="modal-form__nav">
+                    <button class="m-btn m-btn-primary _arrow">
+                        <span>Отправить</span>
+                        <img src="img/arrow-right2.svg" alt="">
+                    </button>
+                </div>
+                <div class="modal-form__checks">
+                    <div class="m-check ">
+                        <input type="checkbox">
+                        <label><span>Нажимая кнопку “Отправить” вы соглашаетесь на обработку персональных данных в соответствии с <a href="">политикой конфиденциальности</a></span></label>
+                    </div>
+
+                    <div class="m-check ">
+                        <input type="checkbox">
+                        <label><span>Согласен получать рассылку</span></label>
+                    </div>
+
+                </div>
+
+
+            </form>
+            <button class="modal__close _close-modal">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.4" d="M15 1L1 15M1 1L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- <div class="modal-backdrop show"></div> -->
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

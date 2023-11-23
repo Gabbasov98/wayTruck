@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036"></script>
+    <title>Каточка товара</title>
+</head>
+
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header _open-menu2">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top__inner">
+                        <div class="lang">
+                            <div class="lang__show">
+                                <img src="img/world.svg" alt="Мир" class="lang__icon">
+                                <div class="lang__current text14 medium-text">
+                                    Русский
+                                </div>
+                                <img src="img/arrow-down.svg" alt="Стрелка" class="lang__arrow">
+                            </div>
+                            <div class="lang__hidden">
+                                <a href="" class="lang__option _active"><span>Русский</span></a>
+                                <a href="" class="lang__option"><span>Казахский</span></a>
+                            </div>
+                        </div>
+
+                        <div class="menu">
+                            <div class="menu__top">
+                                <div class="header-action">
+                                    <a href="" class="header-action__btn">
+                                        <img src="img/user.svg" alt="Пользователь">
+                                        <span class="text14">Войти</span>
+                                    </a>
+                                    <a href="" class="header-action__btn header-action__btn--favourite">
+                                        <img src="img/favourite.svg" alt="Избранное">
+                                        <span class="text14">Избранное</span>
+                                        <div class="_pin"><span>4</span></div>
+                                    </a>
+                                    <a href="" class="header-action__btn header-action__btn--cart">
+                                        <img src="img/cart.svg" alt="Корзина">
+                                        <span class="text14">Корзина</span>
+                                        <div class="_pin"><span>7</span></div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <nav class="nav">
+                                <a href="" class="nav__link nav__link--catalog">
+                                    <span>Каталог запчастей</span>
+                                </a>
+                                <a href="" class="nav__link">
+                                    <span>О компании</span>
+                                </a>
+                                <a href="" class="nav__link">
+                                    <span>Новости</span>
+                                </a>
+                                <a href="" class="nav__link">
+                                    <span>Доставка и оплата</span>
+                                </a>
+                                <a href="" class="nav__link">
+                                    <span>Гарантия</span>
+                                </a>
+                                <a href="" class="nav__link">
+                                    <span>Контакты</span>
+                                </a>
+                            </nav>
+
+                            <div class="menu__call">
+                                <button class="header__call m-btn m-btn-primary-outline">
+                                    <span>Заказать звонок</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="menu__bg _backdrop _toggle-menu"></div>
+                        <button class="menu__close close-btn _toggle-menu">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.7" clip-path="url(#clip0_417_41080)">
+                                    <path d="M13.5 4.5L4.5 13.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M4.5 4.5L13.5 13.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </button>
+
+                        <div class="header-top__right">
+                            <div class="header-contacts">
+                                <div class="header-contacts__show">
+                                    <img src="img/whatsapp.svg" alt="Whatsapp" class="header-contacts__icon">
+                                    <div class="text15 medium-text">
+                                        +7 747 865 31 43
+                                    </div>
+                                    <img src="img/arrow-down.svg" alt="Стрелка" class="header-contacts__arrow">
+                                </div>
+                                <div class="header-contacts__hidden">
+                                    <div class="header-phone">
+                                        <div class="header-phone__title text15">
+                                            Менеджер по продажам
+                                        </div>
+                                        <a href="tel:+77077772433" class="header-phone__link">
+                                            <img src="img/whatsapp2.svg" alt="Whatsapp" class="header-phone__icon">
+                                            <span class="text17">+7-707-777-24-33</span>
+                                        </a>
+                                    </div>
+                                    <div class="header-phone">
+                                        <div class="header-phone__title text15">
+                                            Менеджер по продажам
+                                        </div>
+                                        <a href="tel:+77476521513" class="header-phone__link">
+                                            <img src="img/whatsapp2.svg" alt="Whatsapp" class="header-phone__icon">
+                                            <span class="text17">+7-747-652-15-13</span>
+                                        </a>
+                                    </div>
+                                    <div class="header-phone">
+                                        <div class="header-phone__title text15">
+                                            Менеджер по продажам
+                                        </div>
+                                        <a href="tel:+77476521506" class="header-phone__link">
+                                            <img src="img/whatsapp2.svg" alt="Whatsapp" class="header-phone__icon">
+                                            <span class="text17">+7-747-652-15-06</span>
+                                        </a>
+                                    </div>
+                                    <div class="header-phone">
+                                        <div class="header-phone__title text15">
+                                            Менеджер по продажам
+                                        </div>
+                                        <a href="tel:+77478653143" class="header-phone__link">
+                                            <img src="img/whatsapp2.svg" alt="Whatsapp" class="header-phone__icon">
+                                            <span class="text17">+7-747-865-31-43</span>
+                                        </a>
+                                    </div>
+                                    <button class="header__call m-btn m-btn-primary">
+                                        <span>Заказать звонок</span>
+                                    </button>
+                                    <a href="mailto:sales@way-truck.com" class="header-contacts__email">
+                                        <img src="img/mail.svg" alt="Конверт" class="header-phone__icon">
+                                        <span class="text15">sales@way-truck.com</span>
+                                    </a>
+                                    <div class="header-contacts__address">
+                                        <img src="img/map-pin.svg" alt="Маркер карты" class="header-phone__icon">
+                                        <span class="text14">Алматы, улица Серикова, 6</span>
+                                    </div>
+                                    <button class="header-contacts__close close-btn">
+                                        <img src="img/close.svg" alt="Крестик">
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="header__call header__call--hide-mob m-btn m-btn-white">
+                                <span>Заказать звонок</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="header-bottom__inner">
+                        <a href="" class="header__logo">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+                        <a href="" class="header__btn header__btn--desktop m-btn m-btn-black">
+                            <img src="img/burger.svg" alt="Меню">
+                            <span>Каталог</span>
+                        </a>
+                        <button class="header__btn _toggle-menu header__btn--mob m-btn m-btn-black">
+                            <img src="img/burger.svg" alt="Меню">
+                            <span>Меню</span>
+                        </button>
+
+                        <div class="header-search m-search">
+                            <fieldset class="search-field header-search__field">
+                                <input class="_search-field" type="text" placeholder="Поиск по 10 000 запчастей" data-placeholder="Поиск по 10 000 запчастей" data-placeholder2="Поиск...">
+                                <button class="search-field__btn">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.7725 17.5L13.4166 13.1053M1.77246 8.26978C1.77246 9.1588 1.94815 10.0391 2.2895 10.8605C2.63085 11.6818 3.13118 12.4281 3.76191 13.0567C4.39265 13.6854 5.14144 14.184 5.96553 14.5242C6.78963 14.8645 7.67289 15.0396 8.56488 15.0396C9.45687 15.0396 10.3401 14.8645 11.1642 14.5242C11.9883 14.184 12.7371 13.6854 13.3678 13.0567C13.9986 12.4281 14.4989 11.6818 14.8403 10.8605C15.1816 10.0391 15.3573 9.1588 15.3573 8.26978C15.3573 7.38076 15.1816 6.50044 14.8403 5.6791C14.4989 4.85775 13.9986 4.11145 13.3678 3.48282C12.7371 2.85419 11.9883 2.35553 11.1642 2.01532C10.3401 1.67511 9.45687 1.5 8.56488 1.5C7.67289 1.5 6.78963 1.67511 5.96553 2.01532C5.14144 2.35553 4.39265 2.85419 3.76191 3.48282C3.13118 4.11145 2.63085 4.85775 2.2895 5.6791C1.94815 6.50044 1.77246 7.38076 1.77246 8.26978Z" stroke="#1A1E29" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </fieldset>
+
+
+
+                            <div class="m-search__result">
+
+
+                                <div class="m-search__items">
+                                    <a href="" class="search-item">
+                                        <div class="search-item__img">
+                                            <img src="img/search-img.webp" alt="">
+                                        </div>
+                                        <div class="search-item__content">
+                                            <div class="search-item__title text17 medium-text">
+                                                Ремкомплект V образной тяги HOWO
+                                            </div>
+                                            <div class="search-item__code text13">
+                                                5G5GGDKHJH7255
+                                            </div>
+                                        </div>
+                                        <div class="search-item__btn m-btn m-btn-primary-outline">
+                                            <span>Перейти</span>
+                                        </div>
+                                    </a>
+
+                                    <a href="" class="search-item">
+                                        <div class="search-item__img">
+                                            <img src="img/search-img2.webp" alt="">
+                                        </div>
+                                        <div class="search-item__content">
+                                            <div class="search-item__title text17 medium-text">
+                                                Ремкомплект ГУР HOWO
+                                            </div>
+                                            <div class="search-item__code text13">
+                                                5G5GGDKHJH7255
+                                            </div>
+                                        </div>
+                                        <div class="search-item__btn m-btn m-btn-primary-outline">
+                                            <span>Перейти</span>
+                                        </div>
+                                    </a>
+
+                                    <a href="" class="search-item">
+                                        <div class="search-item__img">
+                                            <img src="img/search-img3.webp" alt="">
+                                        </div>
+                                        <div class="search-item__content">
+                                            <div class="search-item__title text17 medium-text">
+                                                Ремкомплект V образной тяги HOWO
+                                            </div>
+                                            <div class="search-item__code text13">
+                                                5G5GGDKHJH7255
+                                            </div>
+                                        </div>
+                                        <div class="search-item__btn m-btn m-btn-primary-outline">
+                                            <span>Перейти</span>
+                                        </div>
+                                    </a>
+
+                                    <a href="" class="search-item">
+                                        <div class="search-item__img">
+                                            <img src="img/search-img4.webp" alt="">
+                                        </div>
+                                        <div class="search-item__content">
+                                            <div class="search-item__title text17 medium-text">
+                                                Ремкомплект V образной тяги HOWO
+                                            </div>
+                                            <div class="search-item__code text13">
+                                                5G5GGDKHJH7255
+                                            </div>
+                                        </div>
+                                        <div class="search-item__btn m-btn m-btn-primary-outline">
+                                            <span>Перейти</span>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="m-search__nav">
+                                    <a href="" class="m-search__link m-btn m-btn-primary-outline">
+                                        <span class="text15">Перейти ко всем результатам</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header-action">
+                            <a href="" class="header-action__btn">
+                                <img src="img/user.svg" alt="Пользователь">
+                                <span class="text14">Войти</span>
+                            </a>
+                            <a href="" class="header-action__btn header-action__btn--favourite">
+                                <img src="img/favourite.svg" alt="Избранное">
+                                <span class="text14">Избранное</span>
+                                <div class="_pin"><span>4</span></div>
+                            </a>
+                            <a href="" class="header-action__btn header-action__btn--cart">
+                                <img src="img/cart.svg" alt="Корзина">
+                                <span class="text14">Корзина</span>
+                                <div class="_pin"><span>7</span></div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <main class="content">
+            <div class="page-top">
+                <div class="container">
+                    <nav class="woocommerce-breadcrumb">
+                        <a href="">Главная</a>
+                        <a href="">Каталог</a>
+                        <a href="">Howo</a>
+                        <a href="">Howo T5g</a>
+                        <a href="">Двигатель</a>
+                        <span>Блок цилиндров двигателя WD615 Евро-2</span>
+                    </nav>
+                </div>
+            </div>
+
+
+
+            <section class="catalog-item">
+                <div class="container">
+                    <div class="catalog-item__top">
+                        <div class="catalog-item__col">
+                            <div class="gallery">
+                                <div class="gallery__small">
+                                    <div thumbsSlider class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="gallery__img">
+                                                    <img src="img/gallery.webp" alt="Галлерея">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="gallery__img">
+                                                    <img src="img/gallery2.webp" alt="Галлерея">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="gallery__img">
+                                                    <img src="img/gallery3.webp" alt="Галлерея">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="gallery__img">
+                                                    <img src="img/gallery4.webp" alt="Галлерея">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="gallery__img">
+                                                    <img src="img/gallery5.webp" alt="Галлерея">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery__big">
+                                    <div class="swiper mySwiper2">
+                                        <div class="swiper-wrapper gallery-group">
+                                            <div class="swiper-slide">
+                                                <a href="img/gallery.webp" class="gallery__img" data-fancybox="@@album">
+                                                    <img src="img/gallery.webp" alt="Галлерея">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="img/gallery2.webp" class="gallery__img" data-fancybox="@@album">
+                                                    <img src="img/gallery2.webp" alt="Галлерея">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="img/gallery3.webp" class="gallery__img" data-fancybox="@@album">
+                                                    <img src="img/gallery3.webp" alt="Галлерея">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="img/gallery4.webp" class="gallery__img" data-fancybox="@@album">
+                                                    <img src="img/gallery4.webp" alt="Галлерея">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="img/gallery5.webp" class="gallery__img" data-fancybox="@@album">
+                                                    <img src="img/gallery5.webp" alt="Галлерея">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="gallery__nav">
+                                        <div class="swiper-button swiper-button-prev">
+                                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.46967 6.53033C0.176777 6.23744 0.176777 5.76256 0.46967 5.46967L5.24264 0.696699C5.53553 0.403806 6.01041 0.403806 6.3033 0.696699C6.59619 0.989593 6.59619 1.46447 6.3033 1.75736L2.06066 6L6.3033 10.2426C6.59619 10.5355 6.59619 11.0104 6.3033 11.3033C6.01041 11.5962 5.53553 11.5962 5.24264 11.3033L0.46967 6.53033ZM2 6.75H1V5.25H2V6.75Z" fill="black" />
+                                            </svg>
+                                        </div>
+                                        <div class="swiper-button swiper-button-next">
+                                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.53033 6.53033C6.82322 6.23744 6.82322 5.76256 6.53033 5.46967L1.75736 0.696699C1.46447 0.403806 0.989593 0.403806 0.696699 0.696699C0.403806 0.989593 0.403806 1.46447 0.696699 1.75736L4.93934 6L0.696699 10.2426C0.403806 10.5355 0.403806 11.0104 0.696699 11.3033C0.989593 11.5962 1.46447 11.5962 1.75736 11.3033L6.53033 6.53033ZM5 6.75H6V5.25H5V6.75Z" fill="black" />
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <button class="favourite-btn">
+                                        <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.63217 1.5H10.3685C10.9641 1.5 11.5352 1.75022 11.9563 2.19562C12.3774 2.64102 12.614 3.24511 12.614 3.875V20.5L7.00036 16.9375L1.38672 20.5V3.875C1.38672 3.24511 1.62329 2.64102 2.0444 2.19562C2.4655 1.75022 3.03664 1.5 3.63217 1.5Z" stroke="#18181C" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="catalog-item__col">
+                            <div class="catalog-info">
+                                <h1 class="text41 text28-tablet m-title">
+                                    Блок цилиндров двигателя WD615 Евро-2
+                                </h1>
+                                <div class="product-card__reviews">
+                                    <div class="rating">
+                                        <div class="rating-input rating-input--read-only" data-total-rating="4" data-rating-code="1">
+                                            <div class="rating-input__item" data-rating-value="5">
+                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                </svg>
+                                            </div>
+                                            <div class="rating-input__item" data-rating-value="4">
+                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                </svg>
+                                            </div>
+                                            <div class="rating-input__item" data-rating-value="3">
+                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                </svg>
+                                            </div>
+                                            <div class="rating-input__item" data-rating-value="2">
+                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                </svg>
+                                            </div>
+                                            <div class="rating-input__item" data-rating-value="1">
+                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                </svg>
+                                            </div>
+                                            <input class="rating-input__field" type="number" value="0">
+
+
+                                        </div>
+                                    </div>
+                                    <div class="review-count _big">
+                                        <div class="text14">16 <span>отзывов</span></div>
+                                    </div>
+                                </div>
+
+
+                                <form class="catalog-auth-form m-form ">
+                                    <div class="catalog-auth-form__inner m-form__inner">
+                                        <div class="empty-catalog empty-search">
+                                            <img src="img/info-icon.svg" alt="">
+                                            <div class="empty-search__text text17">
+                                                В данный момент товар отсутствует. Оставьте свои контакты, мы оповестим вас в случае его наличия.
+                                            </div>
+                                        </div>
+                                        <div class="catalog-auth-form__grid">
+                                            <fieldset class="fg">
+                                                <label>
+                                                    Email: <span>*</span>:
+                                                </label>
+                                                <input type="email" placeholder="Ваша электронная почта">
+                                            </fieldset>
+                                            <button class="m-btn m-btn-primary _arrow">
+                                                <span>Отправить</span>
+                                                <img src="img/arrow-right2.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="m-check _gray">
+                                            <input type="checkbox">
+                                            <label><span>Нажимая кнопку “Отправить” вы соглашаетесь на обработку персональных данных в соответствии с <a href="">политикой конфиденциальности</a></span></label>
+                                        </div>
+
+                                    </div>
+                                    <div class="thank">
+                                        <div class="thank__icon"></div>
+                                        <div class="thank__title text26">
+                                            Заявка получена!
+                                        </div>
+                                        <div class="thank__desc text17 light-text">
+                                            Мы вас оповестим когда товар появится в наличии.
+                                        </div>
+                                    </div>
+
+                                </form>
+
+
+                                <div class="product-detail">
+                                    <div class="product-detail__item">
+                                        <div class="product-detail__show">
+                                            <div class="product-detail__title">
+                                                Артикул: <a href="">5G5GGDKHJH7255</a>
+                                            </div>
+                                            <button class="product-detail__btn">
+                                                <img src="img/arrow-right.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail__item">
+                                        <div class="product-detail__show">
+                                            <div class="product-detail__title">
+                                                Производитель: <a href="">Qinyan</a>
+                                            </div>
+                                            <button class="product-detail__btn">
+                                                <img src="img/arrow-right.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail__item">
+                                        <div class="product-detail__show _toggle-product-detail">
+                                            <div class="product-detail__title">
+                                                <span class="_view1">Показать</span><span class="_view2">Скрыть</span> аналоги
+                                            </div>
+                                            <button class="product-detail__btn">
+                                                <img src="img/arrow-right.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="product-detail__hidden">
+                                            <div class="product-detail__links">
+                                                <a href="" class="product-detail__link"><span>5G5GGDKHJH7255, </span></a>
+                                                <a href="" class="product-detail__link"><span>C4G5HDFDF5, </span></a>
+                                                <a href="" class="product-detail__link"><span>436HHFH32007, </span></a>
+                                                <a href="" class="product-detail__link"><span>C4G5HDFDF5, </span></a>
+                                                <a href="" class="product-detail__link"><span>5G5GGDKHJH7255,</span></a>
+                                                <a href="" class="product-detail__link"><span>G465J864GR,</span></a>
+                                                <a href="" class="product-detail__link"><span>5G5GGDKHJH7255, </span></a>
+                                                <a href="" class="product-detail__link"><span>5G5GGDKHJH7255, </span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="params">
+                                    <div class="text18 medium-text font1">
+                                        Параметры
+                                    </div>
+                                    <div class="params__item">
+                                        Вес: <b>53кг.</b>
+                                    </div>
+                                    <div class="params__item">
+                                        Объем: <b>78м3</b>
+                                    </div>
+                                </div>
+
+                                <div class="qa-card">
+                                    <div class="qa-card__show">
+                                        <div class="qa-card__title">
+                                            Описание
+                                        </div>
+                                        <button class="qa-card__btn">
+                                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path class="_hide" d="M12.5 5.5V19.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M5.5 12.5H19.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="qa-card__hidden">
+                                        <div class="qa-card__text">
+                                            Двигатель широко распространён и устанавливается как на фронтальные погрузчики, так и на бульдозеры, и грузовики производства КНТг. Из погрузчиков это Foton 956, 958, Xcmg zl50g, Sdlg 952 ,953 956, Liugong 856, Chengong 956, 958, CDM 855, LW500.
+                                        </div>
+                                        <div class="qa-card__nav">
+                                            <a href="#catalog-detail" class="qa-card__link _show-more-detail">Читать полное описание</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="catalog-detail" class="catalog-detail _tabs-parent">
+                        <div class="tabs">
+                            <div class="tab _tab _active" data-tab="_tab1">
+                                <span>Описание товара</span>
+                            </div>
+                            <div class="tab _tab" data-tab="_tab2">
+                                <span>Оплата и доставка</span>
+                            </div>
+                            <div class="tab _tab" data-tab="_tab3">
+                                <span>Отзывы</span>
+                            </div>
+                        </div>
+                        <div class="tab-content _tab1 _active">
+                            <div class="catalog-desc">
+                                <div class="text">
+                                    <h3>Описание</h3>
+                                    <p>Двигатель широко распространён и устанавливается как на фронтальные погрузчики, так и на бульдозеры, и грузовики производства КНТг. Из погрузчиков это Foton 956, 958, Xcmg zl50g, Sdlg 952 ,953 956, Liugong 856, Chengong 956, 958, CDM 855, LW500. Двигатель востребованной благодаря своей экономичности, неприхотливости, надёжности и долговечности</p>
+                                    <p>В наличии на складе в г. Алматы запчасти поршневой группы (поршни , гильзы , поршневые кольца , пальцы поршневые ), коленвалы и блоки, стартеры , генераторы , водяные и масляные насосы, вкладыши, прокладки ГБЦ, ремкомплекты прокладок, форсунки и распылители.</p>
+
+                                    <img src="img/catalog-desc.png" alt="">
+                                    <p>Двигатель широко распространён и устанавливается как на фронтальные погрузчики, так и на бульдозеры, и грузовики производства КНТг. Из погрузчиков это Foton 956, 958, Xcmg zl50g, Sdlg 952 ,953 956, Liugong 856, Chengong 956, 958, CDM 855, LW500. Двигатель востребованной благодаря своей экономичности, неприхотливости, надёжности и долговечности</p>
+                                    <p>В наличии на складе в г. Алматы запчасти поршневой группы (поршни , гильзы , поршневые кольца , пальцы поршневые ), коленвалы и блоки, стартеры , генераторы , водяные и масляные насосы, вкладыши, прокладки ГБЦ, ремкомплекты прокладок, форсунки и распылители.</p>
+                                    <p>Двигатель востребованной благодаря своей экономичности, неприхотливости, надёжности и долговечности</p>
+                                    <p>В наличии на складе запчасти поршневой группы (поршни , гильзы , поршневые кольца , пальцы поршневые )</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content _tab2">
+                            <div class="catalog-delivery">
+                                <div class="text">
+                                    <h3>Оплата и доставка</h3>
+                                    <p>Мы понимаем, что простой грузовых автомобилей негативно сказывается на доходах компаний. Поэтому предоставляем максимально возможное количество способов доставки:</p>
+                                    <ul>
+                                        <li>транспортными компаниями</li>
+                                        <li>автобусами</li>
+                                        <li>попутными фурами</li>
+                                        <li>курьерскими службами Яндекс, Индрайвер и т.д.</li>
+                                        <li>самовывоз</li>
+                                    </ul>
+                                    <p>Мы работаем со всеми надежными транспортными компаниями: ПЭК, Энергия, Kit, Jet Logistics, ТрансКарго Азия, Глобалинк, Возавоз, ЖелДорЭкспедиция, Ратэк, ГлавДоставка, Алеко, Транслайн, Asia Freight, ТрансКомпаниКостанай, ЛТТ Грузоперевозки, Avis Logistics, ABS Express, Гаранта ГРУП, Asia Mega Trade, Atasu group, Eurasian Bridge, Abt E-Trans, Nomad Global, Ktz Express и дтг.</p>
+                                    <p>Обратитесь к <a href="">нашим менеджерам</a>, и мы найдем способ максимально быстрой доставки по оптимальным тарифам.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content _tab3">
+                            <div class="reviews">
+                                <div class="reviews__col">
+                                    <div class="reviews__items">
+                                        <div class="review-card">
+                                            <div class="review-card__name text20 medium-text">
+                                                Василий
+                                            </div>
+                                            <div class="rating">
+                                                <div class="rating-input rating-input--read-only" data-total-rating="4" data-rating-code="1">
+                                                    <div class="rating-input__item" data-rating-value="5">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="4">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="3">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="2">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="1">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <input class="rating-input__field" type="number" value="0">
+
+
+                                                </div>
+                                            </div>
+                                            <div class="review-card__desc text16">
+                                                Отличный выбор! Данный блок цилиндров двигателя прекрасно подошел к моей машине. Качество исполнения выше всяких похвал, а стильный дизайн придал ей новую жизнь.
+                                            </div>
+                                            <div class="review-card__date">
+                                                1 Августа 2023
+                                            </div>
+                                        </div>
+
+                                        <div class="review-card">
+                                            <div class="review-card__name text20 medium-text">
+                                                Иван В.
+                                            </div>
+                                            <div class="rating">
+                                                <div class="rating-input rating-input--read-only" data-total-rating="5" data-rating-code="1">
+                                                    <div class="rating-input__item" data-rating-value="5">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="4">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="3">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="2">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="1">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <input class="rating-input__field" type="number" value="0">
+
+
+                                                </div>
+                                            </div>
+                                            <div class="review-card__desc text16">
+                                                Купил этот блок недавно и остался доволен. Легкий, но прочный, а также прекрасно справляется с неровностями дороги. Советую всем!
+                                            </div>
+                                            <div class="review-card__date">
+                                                28 Июля 2023
+                                            </div>
+                                        </div>
+
+                                        <div class="review-card">
+                                            <div class="review-card__name text20 medium-text">
+                                                Василий
+                                            </div>
+                                            <div class="rating">
+                                                <div class="rating-input rating-input--read-only" data-total-rating="4" data-rating-code="1">
+                                                    <div class="rating-input__item" data-rating-value="5">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="4">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="3">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="2">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="1">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <input class="rating-input__field" type="number" value="0">
+
+
+                                                </div>
+                                            </div>
+                                            <div class="review-card__desc text16">
+                                                Отличный выбор! Данный блок цилиндров двигателя прекрасно подошел к моей машине. Качество исполнения выше всяких похвал, а стильный дизайн придал ей новую жизнь.
+                                            </div>
+                                            <div class="review-card__date">
+                                                1 Августа 2023
+                                            </div>
+                                        </div>
+
+                                        <div class="review-card">
+                                            <div class="review-card__name text20 medium-text">
+                                                Иван В.
+                                            </div>
+                                            <div class="rating">
+                                                <div class="rating-input rating-input--read-only" data-total-rating="5" data-rating-code="1">
+                                                    <div class="rating-input__item" data-rating-value="5">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="4">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="3">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="2">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="1">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <input class="rating-input__field" type="number" value="0">
+
+
+                                                </div>
+                                            </div>
+                                            <div class="review-card__desc text16">
+                                                Купил этот блок недавно и остался доволен. Легкий, но прочный, а также прекрасно справляется с неровностями дороги. Советую всем!
+                                            </div>
+                                            <div class="review-card__date">
+                                                28 Июля 2023
+                                            </div>
+                                        </div>
+
+                                        <div class="review-card">
+                                            <div class="review-card__name text20 medium-text">
+                                                Василий
+                                            </div>
+                                            <div class="rating">
+                                                <div class="rating-input rating-input--read-only" data-total-rating="4" data-rating-code="1">
+                                                    <div class="rating-input__item" data-rating-value="5">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="4">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="3">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="2">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="1">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <input class="rating-input__field" type="number" value="0">
+
+
+                                                </div>
+                                            </div>
+                                            <div class="review-card__desc text16">
+                                                Отличный выбор! Данный блок цилиндров двигателя прекрасно подошел к моей машине. Качество исполнения выше всяких похвал, а стильный дизайн придал ей новую жизнь.
+                                            </div>
+                                            <div class="review-card__date">
+                                                1 Августа 2023
+                                            </div>
+                                        </div>
+
+                                        <div class="review-card">
+                                            <div class="review-card__name text20 medium-text">
+                                                Иван В.
+                                            </div>
+                                            <div class="rating">
+                                                <div class="rating-input rating-input--read-only" data-total-rating="5" data-rating-code="1">
+                                                    <div class="rating-input__item" data-rating-value="5">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="4">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="3">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="2">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="1">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <input class="rating-input__field" type="number" value="0">
+
+
+                                                </div>
+                                            </div>
+                                            <div class="review-card__desc text16">
+                                                Купил этот блок недавно и остался доволен. Легкий, но прочный, а также прекрасно справляется с неровностями дороги. Советую всем!
+                                            </div>
+                                            <div class="review-card__date">
+                                                28 Июля 2023
+                                            </div>
+                                        </div>
+
+                                        <div class="review-card">
+                                            <div class="review-card__name text20 medium-text">
+                                                Иван В.
+                                            </div>
+                                            <div class="rating">
+                                                <div class="rating-input rating-input--read-only" data-total-rating="5" data-rating-code="1">
+                                                    <div class="rating-input__item" data-rating-value="5">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="4">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="3">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="2">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="1">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <input class="rating-input__field" type="number" value="0">
+
+
+                                                </div>
+                                            </div>
+                                            <div class="review-card__desc text16">
+                                                Купил этот блок недавно и остался доволен. Легкий, но прочный, а также прекрасно справляется с неровностями дороги. Советую всем!
+                                            </div>
+                                            <div class="review-card__date">
+                                                28 Июля 2023
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="pagination">
+                                        <div class="pagination__items">
+                                            <a href="" class="pagination__item _btn">
+                                                <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.469669 5.46967C0.176777 5.76256 0.176777 6.23744 0.469669 6.53033L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 6L6.3033 1.75736C6.59619 1.46447 6.59619 0.989593 6.3033 0.696699C6.01041 0.403806 5.53553 0.403806 5.24264 0.696699L0.469669 5.46967ZM19 5.25L1 5.25V6.75L19 6.75V5.25Z" fill="#1D1D1B" />
+                                                </svg>
+                                            </a>
+                                            <a href="" class="pagination__item">
+                                                <span class="text15">1</span>
+                                            </a>
+                                            <a href="" class="pagination__item _active">
+                                                <span class="text15">2</span>
+                                            </a>
+                                            <a href="" class="pagination__item">
+                                                <span class="text15">3</span>
+                                            </a>
+                                            <a href="" class="pagination__item _hide-tablet">
+                                                <span class="text15">4</span>
+                                            </a>
+
+                                            <a href="" class="pagination__item _btn">
+                                                <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M18.5303 5.46967C18.8232 5.76256 18.8232 6.23744 18.5303 6.53033L13.7574 11.3033C13.4645 11.5962 12.9896 11.5962 12.6967 11.3033C12.4038 11.0104 12.4038 10.5355 12.6967 10.2426L16.9393 6L12.6967 1.75736C12.4038 1.46447 12.4038 0.989593 12.6967 0.696699C12.9896 0.403806 13.4645 0.403806 13.7574 0.696699L18.5303 5.46967ZM0 5.25L18 5.25V6.75L0 6.75L0 5.25Z" fill="#1D1D1B" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="reviews__col">
+                                    <div class="review-form m-form  ">
+                                        <div class="m-form__inner">
+                                            <div class="review-form__title text26 m-title">
+                                                Оставить отзыв
+                                            </div>
+                                            <div class="rating">
+                                                <div class="rating__title">
+                                                    <div class="text17">Оцените товар:</div>
+                                                </div>
+                                                <div class="rating-input" data-total-rating="0" data-rating-code="1">
+                                                    <div class="rating-input__item" data-rating-value="5">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="4">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="3">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="2">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="1">
+                                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                        </svg>
+                                                    </div>
+                                                    <input class="rating-input__field" type="number" value="0">
+
+
+                                                </div>
+                                            </div>
+                                            <div class="review-form__fields">
+                                                <fieldset class="fg">
+                                                    <label>
+                                                        Ваше имя <span>*</span>:
+                                                    </label>
+                                                    <input type="text" placeholder="Как к вам обращаться?">
+                                                </fieldset>
+                                                <fieldset class="fg">
+                                                    <label>
+                                                        Email: <span>*</span>:
+                                                    </label>
+                                                    <input type="email" placeholder="Ваша электронная почта">
+                                                </fieldset>
+                                                <fieldset class="fg _full-tablet">
+                                                    <label>
+                                                        Текст отзыва: <span>*</span>:
+                                                    </label>
+                                                    <textarea placeholder="Напишите свой отзыв"></textarea>
+                                                </fieldset>
+                                                <div class="m-check _full-tablet _gray">
+                                                    <input checked type="checkbox">
+                                                    <label><span>Соглашаюсь с <a href="">политикой конфиденциальности</a> и обработкой персональных данных</span></label>
+                                                </div>
+
+                                            </div>
+                                            <div class="review-form__nav">
+                                                <button class="m-btn m-btn-primary">
+                                                    <span>Отправить отзыв</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="thank">
+                                            <div class="thank__icon"></div>
+                                            <div class="thank__title text26">
+                                                Спасибо за ваш отзыв!
+                                            </div>
+                                            <div class="thank__desc text17 light-text">
+                                                Ваш отзыв будет опубликован сразу же после проверки нашим модератором.
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="product-collection">
+                <div class="container">
+                    <div class="line-title">
+                        <div class="text41 text28-tablet m-title">
+                            Похожие товары
+                        </div>
+                    </div>
+                    <div class="product-slider slider">
+                        <div class="slider__wrap">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <a href="" class="product-card__img">
+                                                <img src="img/product.webp" alt="">
+                                            </a>
+                                            <button class="favourite-btn ">
+                                                <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3.63217 1.5H10.3685C10.9641 1.5 11.5352 1.75022 11.9563 2.19562C12.3774 2.64102 12.614 3.24511 12.614 3.875V20.5L7.00036 16.9375L1.38672 20.5V3.875C1.38672 3.24511 1.62329 2.64102 2.0444 2.19562C2.4655 1.75022 3.03664 1.5 3.63217 1.5Z" stroke="#18181C" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+
+                                            <div class="product-card__content">
+                                                <div class="product-card__reviews">
+                                                    <div class="rating">
+                                                        <div class="rating-input rating-input--read-only" data-total-rating="4" data-rating-code="1">
+                                                            <div class="rating-input__item" data-rating-value="5">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="4">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="3">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="2">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="1">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <input class="rating-input__field" type="number" value="0">
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="review-count">
+                                                        <div class="text14">16 <span>отзывов</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-card__title text23 medium-text">
+                                                    <a href="">Болт полый топливной трубки с отверстием M8</a>
+                                                </div>
+                                                <div class="product-card__articul text14">
+                                                    Артикул: D43G54HDFG4
+                                                </div>
+                                            </div>
+                                            <div class="product-card__nav">
+                                                <div class="product-prices">
+
+                                                    <div class="product-prices__num1">
+                                                        <div class="text14">
+                                                            65 599тг.
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-prices__num2">
+                                                        <div class="text19 medium-text">
+                                                            65 429тг.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="cart-btn m-btn m-btn-primary">
+                                                    <span class="_view1">в КОРЗИНУ</span>
+                                                    <span class="_view2">Добавлено</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <a href="" class="product-card__img">
+                                                <img src="img/product2.webp" alt="">
+                                            </a>
+                                            <button class="favourite-btn ">
+                                                <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3.63217 1.5H10.3685C10.9641 1.5 11.5352 1.75022 11.9563 2.19562C12.3774 2.64102 12.614 3.24511 12.614 3.875V20.5L7.00036 16.9375L1.38672 20.5V3.875C1.38672 3.24511 1.62329 2.64102 2.0444 2.19562C2.4655 1.75022 3.03664 1.5 3.63217 1.5Z" stroke="#18181C" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+
+                                            <div class="product-card__content">
+                                                <div class="product-card__reviews">
+                                                    <div class="rating">
+                                                        <div class="rating-input rating-input--read-only" data-total-rating="4" data-rating-code="1">
+                                                            <div class="rating-input__item" data-rating-value="5">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="4">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="3">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="2">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="1">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <input class="rating-input__field" type="number" value="0">
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="review-count">
+                                                        <div class="text14">16 <span>отзывов</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-card__title text23 medium-text">
+                                                    <a href="">Болт полый топливной трубки с отверстием M8</a>
+                                                </div>
+                                                <div class="product-card__articul text14">
+                                                    Артикул: D43G54HDFG4
+                                                </div>
+                                            </div>
+                                            <div class="product-card__nav">
+                                                <div class="product-prices">
+
+                                                    <div class="product-prices__num1">
+                                                        <div class="text14">
+                                                            65 599тг.
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-prices__num2">
+                                                        <div class="text19 medium-text">
+                                                            65 429тг.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="cart-btn m-btn m-btn-primary">
+                                                    <span class="_view1">в КОРЗИНУ</span>
+                                                    <span class="_view2">Добавлено</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <a href="" class="product-card__img">
+                                                <img src="img/product3.webp" alt="">
+                                            </a>
+                                            <button class="favourite-btn ">
+                                                <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3.63217 1.5H10.3685C10.9641 1.5 11.5352 1.75022 11.9563 2.19562C12.3774 2.64102 12.614 3.24511 12.614 3.875V20.5L7.00036 16.9375L1.38672 20.5V3.875C1.38672 3.24511 1.62329 2.64102 2.0444 2.19562C2.4655 1.75022 3.03664 1.5 3.63217 1.5Z" stroke="#18181C" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+
+                                            <div class="product-card__content">
+                                                <div class="product-card__reviews">
+                                                    <div class="rating">
+                                                        <div class="rating-input rating-input--read-only" data-total-rating="4" data-rating-code="1">
+                                                            <div class="rating-input__item" data-rating-value="5">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="4">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="3">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="2">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="1">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <input class="rating-input__field" type="number" value="0">
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="review-count">
+                                                        <div class="text14">16 <span>отзывов</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-card__title text23 medium-text">
+                                                    <a href="">Блок цилиндров двигателя WD615 Евро-2</a>
+                                                </div>
+                                                <div class="product-card__articul text14">
+                                                    Артикул: D43G54HDFG4
+                                                </div>
+                                            </div>
+                                            <div class="product-card__nav">
+                                                <div class="product-prices">
+
+                                                    <div class="product-prices__num2">
+                                                        <div class="text19 medium-text">
+                                                            78 429тг.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="cart-btn m-btn m-btn-primary">
+                                                    <span class="_view1">в КОРЗИНУ</span>
+                                                    <span class="_view2">Добавлено</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <a href="" class="product-card__img">
+                                                <img src="img/product4.webp" alt="">
+                                            </a>
+                                            <button class="favourite-btn ">
+                                                <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3.63217 1.5H10.3685C10.9641 1.5 11.5352 1.75022 11.9563 2.19562C12.3774 2.64102 12.614 3.24511 12.614 3.875V20.5L7.00036 16.9375L1.38672 20.5V3.875C1.38672 3.24511 1.62329 2.64102 2.0444 2.19562C2.4655 1.75022 3.03664 1.5 3.63217 1.5Z" stroke="#18181C" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+
+                                            <div class="product-card__content">
+                                                <div class="product-card__reviews">
+                                                    <div class="rating">
+                                                        <div class="rating-input rating-input--read-only" data-total-rating="4" data-rating-code="1">
+                                                            <div class="rating-input__item" data-rating-value="5">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="4">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="3">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="2">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="1">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <input class="rating-input__field" type="number" value="0">
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="review-count">
+                                                        <div class="text14">16 <span>отзывов</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-card__title text23 medium-text">
+                                                    <a href="">Болт полый топливной трубки с отверстием M8</a>
+                                                </div>
+                                                <div class="product-card__articul text14">
+                                                    Артикул: D43G54HDFG4
+                                                </div>
+                                            </div>
+                                            <div class="product-card__nav">
+                                                <div class="product-prices">
+
+                                                    <div class="product-prices__num1">
+                                                        <div class="text14">
+                                                            65 599тг.
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-prices__num2">
+                                                        <div class="text19 medium-text">
+                                                            65 429тг.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="cart-btn m-btn m-btn-primary">
+                                                    <span class="_view1">в КОРЗИНУ</span>
+                                                    <span class="_view2">Добавлено</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card">
+                                            <a href="" class="product-card__img">
+                                                <img src="img/product5.webp" alt="">
+                                            </a>
+                                            <button class="favourite-btn ">
+                                                <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3.63217 1.5H10.3685C10.9641 1.5 11.5352 1.75022 11.9563 2.19562C12.3774 2.64102 12.614 3.24511 12.614 3.875V20.5L7.00036 16.9375L1.38672 20.5V3.875C1.38672 3.24511 1.62329 2.64102 2.0444 2.19562C2.4655 1.75022 3.03664 1.5 3.63217 1.5Z" stroke="#18181C" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+
+                                            <div class="product-card__content">
+                                                <div class="product-card__reviews">
+                                                    <div class="rating">
+                                                        <div class="rating-input rating-input--read-only" data-total-rating="4" data-rating-code="1">
+                                                            <div class="rating-input__item" data-rating-value="5">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="4">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="3">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="2">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class="rating-input__item" data-rating-value="1">
+                                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8 0.5L10.2665 5.38043L15.6085 6.02786L11.6673 9.69157L12.7023 14.9721L8 12.356L3.29772 14.9721L4.33273 9.69157L0.391548 6.02786L5.7335 5.38043L8 0.5Z" fill="#F2F2F6" />
+                                                                </svg>
+                                                            </div>
+                                                            <input class="rating-input__field" type="number" value="0">
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="review-count">
+                                                        <div class="text14">16 <span>отзывов</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-card__title text23 medium-text">
+                                                    <a href="">Болт полый топливной трубки с отверстием M8</a>
+                                                </div>
+                                                <div class="product-card__articul text14">
+                                                    Артикул: D43G54HDFG4
+                                                </div>
+                                            </div>
+                                            <div class="product-card__nav">
+                                                <div class="product-prices">
+
+                                                    <div class="product-prices__num1">
+                                                        <div class="text14">
+                                                            65 599тг.
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-prices__num2">
+                                                        <div class="text19 medium-text">
+                                                            65 429тг.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="cart-btn m-btn m-btn-primary">
+                                                    <span class="_view1">в КОРЗИНУ</span>
+                                                    <span class="_view2">Добавлено</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-nav">
+                            <div class="swiper-button swiper-button-prev">
+                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.96967 6.53033C0.676777 6.23744 0.676777 5.76256 0.96967 5.46967L5.74264 0.696699C6.03553 0.403806 6.51041 0.403806 6.8033 0.696699C7.09619 0.989593 7.09619 1.46447 6.8033 1.75736L2.56066 6L6.8033 10.2426C7.09619 10.5355 7.09619 11.0104 6.8033 11.3033C6.51041 11.5962 6.03553 11.5962 5.74264 11.3033L0.96967 6.53033ZM2.5 6.75H1.5V5.25H2.5V6.75Z" fill="black" />
+                                </svg>
+                            </div>
+                            <div class="swiper-button swiper-button-next">
+                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.03033 6.53033C7.32322 6.23744 7.32322 5.76256 7.03033 5.46967L2.25736 0.696699C1.96447 0.403806 1.48959 0.403806 1.1967 0.696699C0.903806 0.989593 0.903806 1.46447 1.1967 1.75736L5.43934 6L1.1967 10.2426C0.903806 10.5355 0.903806 11.0104 1.1967 11.3033C1.48959 11.5962 1.96447 11.5962 2.25736 11.3033L7.03033 6.53033ZM5.5 6.75H6.5V5.25H5.5V6.75Z" fill="black" />
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-top__inner">
+                        <div class="footer-contacts">
+                            <div class="footer__title">
+                                Контакты
+                            </div>
+                            <div class="footer-contacts__items">
+                                <a href="tel:+77077772433" class="footer-contacts__phone">
+                                    <img src="img/phone.svg" alt="Телефонная трубка">
+                                    <span>+7 707 777 24 33</span>
+                                </a>
+                                <a href="tel:+77476521513" class="footer-contacts__phone">
+                                    <img src="img/phone.svg" alt="Телефонная трубка">
+                                    <span>+7 747 652 15 13</span>
+                                </a>
+                                <a href="tel:+77476521506" class="footer-contacts__phone">
+                                    <img src="img/phone.svg" alt="Телефонная трубка">
+                                    <span>+7 747 652 15 06</span>
+                                </a>
+                                <a href="tel:+77478653143" class="footer-contacts__phone">
+                                    <img src="img/phone.svg" alt="Телефонная трубка">
+                                    <span>+7 747 865 31 43</span>
+                                </a>
+                                <a href="" class="footer-contacts__whatsapp m-btn">
+                                    <span>Написать в WhatsApp</span>
+                                </a>
+                                <a href="mailto:sales@way-truck.com" class="footer-contacts__email">
+                                    <img src="img/mail.svg" alt="Конверт">
+                                    <span>sales@way-truck.com</span>
+                                </a>
+                                <a href="" class="footer-contacts__email">
+                                    <img src="img/instagram.svg" alt="Instagram">
+                                    <span>@wayteko.kaz</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="footer-nav">
+                            <div class="footer-nav__show">
+                                <div class="footer__title">
+                                    Информация
+                                </div>
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.64645 4.85355C3.84171 5.04882 4.15829 5.04882 4.35355 4.85355L7.53553 1.67157C7.7308 1.47631 7.7308 1.15973 7.53553 0.964466C7.34027 0.769204 7.02369 0.769204 6.82843 0.964466L4 3.79289L1.17157 0.964466C0.976311 0.769204 0.659728 0.769204 0.464466 0.964466C0.269204 1.15973 0.269204 1.47631 0.464466 1.67157L3.64645 4.85355ZM3.5 3.5L3.5 4.5L4.5 4.5L4.5 3.5L3.5 3.5Z" fill="white" />
+                                </svg>
+                            </div>
+                            <div class="footer-nav__hidden">
+                                <div class="footer-nav__links">
+                                    <a href="" class="footer-nav__link"><span>О компании</span></a>
+                                    <a href="" class="footer-nav__link"><span>Новости</span></a>
+                                    <a href="" class="footer-nav__link"><span>Доставка и оплата</span></a>
+                                    <a href="" class="footer-nav__link"><span>Гарантия</span></a>
+                                    <a href="" class="footer-nav__link"><span>Контакты</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-nav">
+                            <div class="footer-nav__show">
+                                <div class="footer__title">
+                                    Запчасти
+                                </div>
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.64645 4.85355C3.84171 5.04882 4.15829 5.04882 4.35355 4.85355L7.53553 1.67157C7.7308 1.47631 7.7308 1.15973 7.53553 0.964466C7.34027 0.769204 7.02369 0.769204 6.82843 0.964466L4 3.79289L1.17157 0.964466C0.976311 0.769204 0.659728 0.769204 0.464466 0.964466C0.269204 1.15973 0.269204 1.47631 0.464466 1.67157L3.64645 4.85355ZM3.5 3.5L3.5 4.5L4.5 4.5L4.5 3.5L3.5 3.5Z" fill="white" />
+                                </svg>
+                            </div>
+                            <div class="footer-nav__hidden">
+                                <div class="footer-nav__links">
+                                    <a href="" class="footer-nav__link"><span>Shaanxi</span></a>
+                                    <a href="" class="footer-nav__link"><span>Howo</span></a>
+                                    <a href="" class="footer-nav__link"><span>Faw</span></a>
+                                    <a href="" class="footer-nav__link"><span>Wayteko Premium</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-nav">
+                            <div class="footer-nav__show">
+                                <div class="footer__title">
+                                    Магазин
+                                </div>
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.64645 4.85355C3.84171 5.04882 4.15829 5.04882 4.35355 4.85355L7.53553 1.67157C7.7308 1.47631 7.7308 1.15973 7.53553 0.964466C7.34027 0.769204 7.02369 0.769204 6.82843 0.964466L4 3.79289L1.17157 0.964466C0.976311 0.769204 0.659728 0.769204 0.464466 0.964466C0.269204 1.15973 0.269204 1.47631 0.464466 1.67157L3.64645 4.85355ZM3.5 3.5L3.5 4.5L4.5 4.5L4.5 3.5L3.5 3.5Z" fill="white" />
+                                </svg>
+                            </div>
+                            <div class="footer-nav__hidden">
+                                <div class="footer-nav__links">
+                                    <a href="" class="footer-nav__link"><span>Каталог</span></a>
+                                    <a href="" class="footer-nav__link"><span>Корзина</span></a>
+                                    <a href="" class="footer-nav__link"><span>Избранные товары</span></a>
+                                    <a href="" class="footer-nav__link"><span>Личный кабинет</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer-subscribe">
+                            <div class="footer__title">
+                                Подписка на новости
+                            </div>
+                            <div class="footer-subscribe__desc">
+                                Подпишитесь на новости и скидки
+                            </div>
+                            <form action="" class="subscribe-form">
+                                <div class="subscribe-form__grid">
+                                    <fieldset class="fg ">
+                                        <input type="text" placeholder="Email">
+                                    </fieldset>
+
+
+                                    <button class="m-btn m-btn-primary">
+                                        <span>Подписаться</span>
+                                    </button>
+                                </div>
+
+                                <div class="m-check _gray">
+                                    <input checked type="checkbox">
+                                    <label><span>Согласен с <a href="">политикой конфиденциальности</a></span></label>
+                                </div>
+
+                            </form>
+                            <div class="footer-subscribe__hint">
+                                <div class="text12">Вся представленная на сайте информация носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями статьи 437 (2) ГК РФ.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom__inner">
+                        <div class="footer-bottom__item">
+                            <span>© 2023 - WayTruck - продажа запчастей для китайских грузовиков</span>
+                        </div>
+                        <a href="" class="footer-bottom__item footer-bottom__conf">
+                            <span>Политика конфиденциальности</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <div class="cookie-modal _active">
+        <div class="container">
+            <div class="cookie-modal__inner">
+                <div class="cookie-modal__content">
+                    <div class="cookie-modal__title text23 text18-tablet">
+                        Сайт использует Cookie
+                    </div>
+                    <div class="cookie-modal__desc">
+                        Используя данный сайт, вы даете согласие на использование файлов cookie, данных об IP-адресе и местоположении, помогающих нам сделать его удобнее для вас.
+                        <a href="">Подробнее</a>
+                    </div>
+                </div>
+                <div class="cookie-modal__nav">
+                    <button class="cookie-modal__btn m-btn m-btn-primary-outline">
+                        <span>Принять и закрыть</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="orderModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text36 text26-tablet medium-text">
+                    Заказать звонок
+                </div>
+            </div>
+            <form action="" class="modal-form">
+                <fieldset class="fg">
+                    <label>
+                        Ваше имя <span>*</span>:
+                    </label>
+                    <input type="text" placeholder="Как к вам обращаться?">
+                </fieldset>
+                <fieldset class="fg">
+                    <label>
+                        Номер телефона <span>*</span>:
+                    </label>
+                    <input type="tel" placeholder="+7 (___) ___-__-__">
+                </fieldset>
+                <div class="modal-form__nav">
+                    <button class="m-btn m-btn-primary _arrow">
+                        <span>Отправить</span>
+                        <img src="img/arrow-right2.svg" alt="">
+                    </button>
+                </div>
+                <div class="modal-form__checks">
+                    <div class="m-check ">
+                        <input type="checkbox">
+                        <label><span>Нажимая кнопку “Отправить” вы соглашаетесь на обработку персональных данных в соответствии с <a href="">политикой конфиденциальности</a></span></label>
+                    </div>
+
+                    <div class="m-check ">
+                        <input type="checkbox">
+                        <label><span>Согласен получать рассылку</span></label>
+                    </div>
+
+                </div>
+
+
+            </form>
+            <button class="modal__close _close-modal">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.4" d="M15 1L1 15M1 1L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- <div class="modal-backdrop show"></div> -->
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
